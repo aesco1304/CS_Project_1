@@ -5,7 +5,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![TODO: Update the path with the name of your diagram](https://github.com/aesco1304/CS_Project_1/blob/main/Diagrams/ELK%20Stack%20Network%20Project%201.PNG)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. The individual yoml files may be used to install only certain pieces of it, such as Filebeat.
 
   - [Install-elk.yml](https://github.com/aesco1304/CS_Project_1/blob/main/Ansible/install-elk.yml)
   - [filebeat-playbook.yml](https://github.com/aesco1304/CS_Project_1/blob/main/Ansible/filebeat-playbook.yml)
@@ -24,12 +24,9 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system performance.
 
 The configuration details of each machine may be found below.
 
@@ -44,20 +41,19 @@ The configuration details of each machine may be found below.
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- My home IP address.
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the Jump Box VM.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses                          |
-|----------|---------------------|-----------------------------------------------|
-| Jump Box | No                  | 23.243.119.207, Port 22                       |
-| Web-1    | No                  | 23.243.119.207, Port 80 and 10.0.0.4, Port 22 |
-| Web-2    | No                  | 23.243.119.207, Port 80 and 10.0.0.4, Port 22 |
-| ELK-VM   | No                  | 23.243.119.207, Port 5601                     |
+| Name     | Publicly Accessible | Allowed IP Addresses                   |
+|----------|---------------------|----------------------------------------|
+| Jump Box | No                  | Home IP, Port 22                       |
+| Web-1    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22 |
+| Web-2    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22 |
+| ELK-VM   | No                  | Home IP, Port 5601                     |
 
 ### Elk Configuration
 
