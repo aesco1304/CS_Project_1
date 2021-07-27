@@ -52,12 +52,12 @@ Machines within the network can only be accessed by _____.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses                      |
-|----------|---------------------|-------------------------------------------|
-| Jump Box | No                  | 23.243.119.207, Port 22                   |
-| Web-1    | No                  | 23.243.119.207, Port 80 10.0.0.4, Port 22 |
-| Web-2    | No                  | 23.243.119.207, Port 80 10.0.0.4, Port 22 |
-| ELK-VM   | No                  | 23.243.119.207, Port 5601                 |
+| Name     | Publicly Accessible | Allowed IP Addresses                          |
+|----------|---------------------|-----------------------------------------------|
+| Jump Box | No                  | 23.243.119.207, Port 22                       |
+| Web-1    | No                  | 23.243.119.207, Port 80 and 10.0.0.4, Port 22 |
+| Web-2    | No                  | 23.243.119.207, Port 80 and 10.0.0.4, Port 22 |
+| ELK-VM   | No                  | 23.243.119.207, Port 5601                     |
 
 ### Elk Configuration
 
