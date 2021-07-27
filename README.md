@@ -48,12 +48,12 @@ Machines within the network can only be accessed by the Jump Box VM.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses                   |
-|----------|---------------------|----------------------------------------|
-| Jump Box | No                  | Home IP, Port 22                       |
-| Web-1    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22 |
-| Web-2    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22 |
-| ELK-VM   | No                  | Home IP, Port 5601                     |
+| Name     | Publicly Accessible | Allowed IP Addresses                     |
+|----------|---------------------|------------------------------------------|
+| Jump Box | No                  | Home IP, Port 22                         |
+| Web-1    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22   |
+| Web-2    | No                  | Home IP, Port 80 and 10.0.0.4, Port 22   |
+| ELK-VM   | No                  | Home IP, Port 5601 and 10.0.0.4, Port 22 |
 
 ### Elk Configuration
 
